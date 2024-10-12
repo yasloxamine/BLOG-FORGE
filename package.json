@@ -1,0 +1,18 @@
+{
+  "name": "blogforge",
+  "version": "1.0.0",
+  "description": "A simple Web blog app built using js,node,express,ejs",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mohamed Amine Yaslo",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "bootstrap": "^5.3.3",
+    "ejs": "^3.1.10",
+    "express": "^4.21.0"
+  }
+}

@@ -1,0 +1,23 @@
+    
+<%- include('partials/header.ejs'); %>
+
+
+
+<div class="grid-container">
+
+    <form action="/submitEdition" method="post" id="grid-post-form">
+
+        <input name="PostId" type="hidden" class="montserrat-verylight" value= <%=  postIdToEdition %>>
+        <h1 class="montserrat-verylight">Edit post</h1>
+        <input name="PostAuthor" type="text" id="form-title" value="<%= postAuthorToEdit %>">
+        <input name="PostTitle" type="text" id="form-title" value="<%= postTitleToEdit %>">
+        <textarea name="PostContent" id="form-text-area" placeholder="Post Content" rows="10"><%= postContentToEdit %></textarea>
+        <input type="submit" class="form-submit-button montserrat-medium" value="Submit">
+    </form>
+
+</div>
+
+</body>
+
+<%- include('partials/footer.ejs'); %>
+

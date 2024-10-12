@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlogForge</title>
+
+    <%# google fonts links for the navbar %>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <%# local css link %>
+    <link rel="stylesheet" href="styles/main.css" />
+
+  </head>
+
+  <body>
+    <div id="nav-container" class="montserrat-verylight">
+      <div>
+        <a class="nav-text" href="/"
+          >BLOG FORGE</a
+        >
+      </div>
+      <div>
+        <a class="nav-text" href="/postCreation"
+          >Create Post</a
+        >
+      </div>
+
+      <div>
+        <p class="nav-text"
+          ><%= new Date().getHours();%>:<%= new Date().getMinutes(); %></p
+        >
+      </div>
+    </div>

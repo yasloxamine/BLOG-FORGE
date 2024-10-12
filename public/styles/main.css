@@ -1,0 +1,131 @@
+/**************TAGS******************/
+body {
+  margin: 0;
+  background-image: url('/images/background.png');
+  background-size: cover;
+  text-align: center;
+}
+
+footer{
+    display: flex;
+  padding: 0px 10px;
+  background: rgba(249, 247, 247, 0.4);
+  backdrop-filter: blur(10px);
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 1px 0px 5px 1px grey;
+  height: 51px;
+  margin-top: 100px;
+}
+
+/**************CLASSES******************/
+.nav-text {
+  color: black;
+  text-decoration: none;
+}
+
+.montserrat-verylight {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.montserrat-medium {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.grid-container {
+  margin: 50px 5% 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-item {
+  box-shadow: 1px 1px 5px 0.5px grey;
+  background: rgba(249, 247, 247, 0.4);
+  backdrop-filter: blur(6px);
+  margin: 10px;
+  padding-top: 10px;
+  border-radius: 1.5rem;
+  grid-column: 2/4;
+}
+
+.form-submit-button{
+  box-shadow: 1px 1px 5px 0.5px grey;
+  background: rgba(247, 249, 247, 0.4);
+  backdrop-filter: blur(6px);
+  width: 8rem;
+  height: 2rem;
+  border: none;
+  border-radius: 1.5rem;
+}
+
+.small-button{
+  
+  background: rgba(247, 249, 247, 0.4);
+  backdrop-filter: blur(6px);
+  width: 1.5rem;
+  height: 1.5rem;
+  border: none;
+  border-radius: 10px;
+}
+
+.text-content{
+  text-align: left;
+  margin: 0 10px;
+}
+
+/**************ID's******************/
+#nav-container {
+  display: flex;
+  padding: 0px 10px;
+  background: rgba(249, 247, 247, 0.4);
+  backdrop-filter: blur(6px);
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 1px 5px 1px grey;
+  height: 51px;
+}
+
+#form-text-area,
+#form-title {
+  width: 100%;
+  box-shadow: 1px 1px 5px 0.5px grey;
+  background: rgba(249, 247, 247, 0.4);
+  backdrop-filter: blur(6px);
+  border: none;
+  padding: 10px;
+  margin: 10px 0px;
+  border-radius: 1.5rem;
+}
+
+#form-text-area{
+  height: 280px;
+}
+
+#grid-post-form {
+    grid-column: span 2;
+    grid-column: 2/4;
+  }
+
+#posts-grid-item-topflex{
+display: flex;
+height: 30px;
+justify-content: space-between;
+align-items: center;
+padding: 0 10px;
+}  
+
+#indication-grid-item{
+  grid-column: 4/5;
+  grid-row: 1/2;
+  height: 55px;
+  text-align: left;
+  
+  width: 60%;
+  padding-left: 10px;
+}
