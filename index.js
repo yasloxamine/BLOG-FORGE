@@ -4,7 +4,7 @@ import express from "express";
 //import the body parser middleware that will parse the body of ejs to use it in the express server
 import bodyParser from "body-parser";
 
-//import the blog post array data fron data.js . wraps the array in an object (blogData), allowing reassignments since the object itself is mutable, so then later it can be modified
+//import the blog post array data from data.js . wraps the array in an object (blogData), allowing reassignments since the object itself is mutable, so then later it can be modified
 import { blogData } from "./data.js";
 
 //initialize the express app
