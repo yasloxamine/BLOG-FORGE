@@ -46,7 +46,7 @@ app.post("/submit", (req, res) => {
 });
 
 
-//delete the posts using the post id to delete a specific post and using the filder method to filter the posts that doesn't have the same id as the selected post
+//delete the posts using the post id and using the filder method to filter the posts that doesn't have the same id as the selected post
 app.get("/deletePost", (req, res) => {
   // Extract the 'id' from the query string
   const postId = parseInt(req.query.id); // Convert it to a number, since post.id is a number
