@@ -1,3 +1,4 @@
+// blogPosts array exported to the index.js
 export let blogData = { blogPosts : [
   {
     id: 1,

@@ -45,6 +45,8 @@ app.post("/submit", (req, res) => {
   res.render("index.ejs", { bp: blogData.blogPosts });
 });
 
+
+//delete the posts using the post id to delete a specific post and using the filder method to filter the posts that doesn't have the same id as the selected post
 app.get("/deletePost", (req, res) => {
   // Extract the 'id' from the query string
   const postId = parseInt(req.query.id); // Convert it to a number, since post.id is a number
@@ -54,6 +56,7 @@ app.get("/deletePost", (req, res) => {
   res.render("index.ejs", { bp: blogData.blogPosts });
 });
 
+//post edition using req.query to get the selected post data and rendering that data in the post edition.ejs
 app.get("/postEdition", (req, res) => {
   const postIdForEdition = parseInt(req.query.id);
   let postAuthorForEdition = req.query.author;
@@ -68,6 +71,7 @@ app.get("/postEdition", (req, res) => {
   });
 });
 
+//submit the modification by removing the old post that have the same id as the one being edited and then pushing a new post with the new modifications while keeping the same id number and then rendering index.ejs while passing the new blogPosts array
 app.post("/submitEdition", (req, res) => {
   const oldPostIdToReplace = parseInt(req.body.PostId);
 
