@@ -79,6 +79,10 @@ footer{
   margin: 0 10px;
 }
 
+.form-text-area{
+  height: 280px;
+}
+
 /**************ID's******************/
 #nav-container {
   display: flex;
@@ -92,7 +96,7 @@ footer{
   flex: 1;
 }
 
-#form-text-area,
+.form-text-area,
 #form-title {
   width: 100%;
   box-shadow: 1px 1px 5px 0.5px grey;
@@ -102,10 +106,6 @@ footer{
   padding: 10px;
   margin: 10px 0px;
   border-radius: 1.5rem;
-}
-
-#form-text-area{
-  height: 280px;
 }
 
 #grid-post-form {
@@ -141,6 +141,11 @@ padding: 0 10px;
 @media screen and (max-width:860px) {
   .grid-item{
     grid-column: 1/5;
+  }
+
+  #grid-post-form{
+    grid-column: 1/5;
+    width: 95%;
   }
 }
 
