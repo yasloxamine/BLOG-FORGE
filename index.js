@@ -4,7 +4,7 @@ import express from "express";
 //import the body parser middleware that will parse the body of ejs to use it in the express server
 import bodyParser from "body-parser";
 
-//import the blog post array data from data.js . wraps the array in an object (blogData), allowing reassignments since the object itself is mutable, so then later it can be modified
+//import the blog post array data fron data.js . wraps the array in an object (blogData), allowing reassignments since the object itself is mutable, so then later it can be modified
 import { blogData } from "./data.js";
 
 //initialize the express app
@@ -46,7 +46,7 @@ app.post("/submit", (req, res) => {
 });
 
 
-//delete the posts using the post id and using the filder method to filter the posts that doesn't have the same id as the selected post
+//delete the posts using the post id to delete a specific post and using the filder method to filter the posts that doesn't have the same id as the selected post
 app.get("/deletePost", (req, res) => {
   // Extract the 'id' from the query string
   const postId = parseInt(req.query.id); // Convert it to a number, since post.id is a number

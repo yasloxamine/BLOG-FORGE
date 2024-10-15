@@ -9,11 +9,11 @@ body {
 footer{
     display: flex;
   padding: 0px 10px;
-  background: rgba(249, 247, 247, 0.4);
-  backdrop-filter: blur(10px);
+  box-shadow: 1px 1px 5px 0.5px grey;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
   justify-content: space-around;
   align-items: center;
-  box-shadow: 1px 0px 5px 1px grey;
   height: 51px;
   margin-top: 100px;
 }
@@ -46,8 +46,8 @@ footer{
 
 .grid-item {
   box-shadow: 1px 1px 5px 0.5px grey;
-  background: rgba(249, 247, 247, 0.4);
-  backdrop-filter: blur(6px);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
   margin: 10px;
   padding-top: 10px;
   border-radius: 1.5rem;
@@ -83,12 +83,13 @@ footer{
 #nav-container {
   display: flex;
   padding: 0px 10px;
-  background: rgba(249, 247, 247, 0.4);
-  backdrop-filter: blur(6px);
+  box-shadow: 1px 1px 5px 0.5px grey;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
   justify-content: space-between;
   align-items: center;
-  box-shadow: 1px 1px 5px 1px grey;
   height: 51px;
+  flex: 1;
 }
 
 #form-text-area,
@@ -125,7 +126,35 @@ padding: 0 10px;
   grid-row: 1/2;
   height: 55px;
   text-align: left;
-  
   width: 60%;
   padding-left: 10px;
+}
+
+/**************Media******************/
+@media screen and (max-width:1100px) {
+  #indication-grid-item{
+    grid-column: 2/4;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width:860px) {
+  .grid-item{
+    grid-column: 1/5;
+  }
+}
+
+@media screen and (max-width:510px) {
+  #indication-grid-item{
+    width: 80%;
+  }
+  .hide-on-small{
+    display: none;
+  }
+}
+
+@media screen and (max-width:430px) {
+  #indication-grid-item{
+    grid-column: 1/5;
+  }
 }
